@@ -34,8 +34,8 @@ const Postcode = () => {
   getResult();
   }, [postcode]);
 
-  const nearestPostcode = data?.nearest
-  const currPostcode = data?.postcode
+  const nearestPostcode = data.nearest
+  const currPostcode = data.postcode
 
   console.log(nearestPostcode)
   console.log(currPostcode)
@@ -50,7 +50,7 @@ const Postcode = () => {
       <Typography component="h2" variant="h4">
         Nearest
       </Typography>
-      {nearestPostcode?.map((listData) =>(
+      {nearestPostcode.map((listData) =>(
       <Table key={listData.postcode} list={listData}/>))}
     </Wrapper>
   )
