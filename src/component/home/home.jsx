@@ -22,7 +22,10 @@ const Home = () => {
         {({ isValid }) => (
           <Styledfrom>
             <Row>
-              <Typography variant="h3">Postcode Info</Typography>
+              <Typography variant="h3">Postcode Finder</Typography>
+            </Row>
+            <Row>
+              <Typography variant="h5">Please type in a postcode</Typography>
             </Row>
             <Field
               component={TextField}
